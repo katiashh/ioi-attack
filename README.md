@@ -2,10 +2,12 @@ IOI: Invisible One-Iteration Adversarial Attack on No-Reference Image- and Video
 ==============
 [[ArXiv](https://arxiv.org/abs/2403.05955)]
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1Pn0yq5HHXb0GSLJTkmGyhA9iubOd9K1-/view?usp=sharing)
+
 ***No-reference image- and video-quality metrics are widely used in video processing benchmarks. The robustness of learning-based metrics under video attacks has not been widely studied. In addition to having success, attacks on metrics that can be employed in video processing benchmarks must be fast and imperceptible. This paper introduces an Invisible One-Iteration (IOI) adversarial attack on no-reference image and video quality metrics. The proposed method uses two modules to ensure high visual quality and temporal stability of adversarial videos and runs for one iteration, which makes it fast. We compared our method alongside eight prior approaches using image and video datasets via objective and subjective tests. Our method exhibited superior visual quality across various attacked metric architectures while maintaining comparable attack success and speed.***
 
 ![](./info_ims/comparison.png)
-*Comparison of adversarial images generated using FGSM (2015), SSAH (2022), Zhang et al. (2022b), NVW (2021), Korhonen et al. (2022b), AdvJND (2020), UAP (2022), FACPA (2023b) and IOI (ours) attack methods when attacking PaQ-2-PiQ (2020) NR quality metric at one iteration with relative gain aligned*
+*Comparison of adversarial images generated using [FGSM (2015)](http://arxiv.org/abs/1412.6572), [SSAH (2022)](https://openaccess.thecvf.com/content/CVPR2022/html/Luo_Frequency-Driven_Imperceptible_Adversarial_Attack_on_Semantic_Similarity_CVPR_2022_paper.html), [Zhang et al. (2022b)](https://openreview.net/forum?id=3AV_53iRfTi), [NVW (2021)](https://openreview.net/forum?id=rq2hMS4OaUX), [Korhonen et al. (2022b)](https://dl.acm.org/doi/abs/10.1145/3552469.3555715), [AdvJND (2020)](http://link.springer.com/10.1007/978-3-030-62460-6_42), [UAP (2022)](https://bmvc2022.mpi-inf.mpg.de/790/), [FACPA (2023b)](https://openreview.net/forum?id=xKf-LSD2-Jg) and IOI (ours) attack methods when attacking [PaQ-2-PiQ (2020)](https://github.com/baidut/paq2piq) NR quality metric at one iteration with relative gain aligned*
 
 ## Contributions
 
@@ -35,6 +37,16 @@ MAE^*(I^p, I) = \frac{1}{HW} \sum_{i=0}^{(H-1)} \sum_{j=0}^{(W-1)} |I^{p*}_{ij} 
 ```
 
 The proof is presented in the paper.
+
+## PyTorch Implementation
+We implemented the proposed method using PyTorch. See [IOI_demo.ipynb](https://github.com/katiashh/ioi-attack/blob/main/IOI_demo.ipynb). 
+The code organized as follows:
+1. Download attacked NR quality metric model ([PaQ-2-PiQ](https://github.com/baidut/paq2piq))
+2. IOI attack code
+3. Attack examples
+4. Evaluating on the [NIPS 2017 dataset](https://www.kaggle.com/datasets/google-brain/nips-2017-adversarial-learning-development-set)
+
+**Speed of the proposed method.** The PyTorch realization of the IOI attack allows reaching 8 fps on the NVIDIA Tesla T4 GPU. Details presented in Appendix B.1.
 
 ## Citation
 
