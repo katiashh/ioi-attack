@@ -48,6 +48,9 @@ The code organized as follows:
 
 **Speed of the proposed method.** The PyTorch realization of the IOI attack allows reaching 8 fps on the NVIDIA Tesla T4 GPU. Details presented in Appendix B.1.
 
+## Supplemental materials
+You can download the Supplemental materials [here](https://drive.google.com/file/d/1nrvV70Q4W0vh-2FdWrXHUhMDzYcI6zY1/view?usp=drive_link).
+
 ## Citation
 
 If you use this code for your research, please cite our paper.
