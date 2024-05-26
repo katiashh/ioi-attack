@@ -40,15 +40,14 @@ MAE^*(I^p, I) = \frac{1}{HW} \sum_{i=0}^{(H-1)} \sum_{j=0}^{(W-1)} |I^{p*}_{ij} 
 
 The proof is presented in the paper.
 
-## PyTorch Implementation
-We implemented the proposed method using PyTorch. See [IOI_demo.ipynb](https://github.com/katiashh/ioi-attack/blob/main/IOI_demo.ipynb). 
+## PyTorch/Numpy Implementation
+We implemented the proposed method using PyTorch and Numpy. See [IOI_demo.ipynb](https://github.com/katiashh/ioi-attack/blob/main/IOI_demo.ipynb). 
 The code organized as follows:
 1. Download attacked NR quality metric model ([PaQ-2-PiQ](https://github.com/baidut/paq2piq))
 2. IOI attack code
 3. Attack examples
 4. Evaluating on the [NIPS 2017 dataset](https://www.kaggle.com/datasets/google-brain/nips-2017-adversarial-learning-development-set)
 
-**Speed of the proposed method.** The PyTorch realization of the IOI attack allows reaching 8 fps on the NVIDIA Tesla T4 GPU. Details presented in Appendix B.1.
 
 ## Supplemental materials
 You can download the Supplemental materials [here](https://drive.google.com/file/d/1nrvV70Q4W0vh-2FdWrXHUhMDzYcI6zY1/view?usp=drive_link).
