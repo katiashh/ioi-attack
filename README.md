@@ -21,7 +21,9 @@ IOI: Invisible One-Iteration Adversarial Attack on No-Reference Image- and Video
 ### Overview
 
 ![](./info_ims/scheme.png)
-*An overview of the proposed IOI adversarial attack. $I$ is stands for input image, $I^p$ – FGSM attacked image and $I^a$ – the final IOI attacked image*
+*An overview of the proposed IOI adversarial attack* 
+
+$I$ is stands for input image, $I^p$ – FGSM attacked image and $I^a$ – the final IOI attacked image.
 
 ### Mathematical properties
 We provide theoretical restrictions of the generated adversarial images or video frames by the proposed method.
