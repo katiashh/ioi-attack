@@ -1,6 +1,6 @@
 IOI: Invisible One-Iteration Adversarial Attack on No-Reference Image- and Video-Quality Metrics (ICML 2024)
 ==============
-[[ArXiv](https://arxiv.org/abs/2403.05955)] [[ICML proceedings](https://proceedings.mlr.press/v235/shumitskaya24a.html)] [[ICML poster](https://icml.cc/media/PosterPDFs/ICML%202024/34667.png?t=1720615748.9051435)] [[YouTube video](https://www.youtube.com/watch?v=ylz4eZax--s)]
+[[ArXiv](https://arxiv.org/abs/2403.05955)] [[ICML proceedings](https://proceedings.mlr.press/v235/shumitskaya24a.html)] [[ICML poster](https://icml.cc/virtual/2024/poster/34667)] [[YouTube video](https://www.youtube.com/watch?v=ylz4eZax--s)]
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1Pn0yq5HHXb0GSLJTkmGyhA9iubOd9K1-/view?usp=sharing)
 
