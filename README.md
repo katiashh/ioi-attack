@@ -57,10 +57,19 @@ You can download the Supplemental materials [here](https://drive.google.com/file
 If you use this code for your research, please cite our paper.
 
 ```
-@article{shumitskaya2024ioi,
-  title={IOI: Invisible One-Iteration Adversarial Attack on No-Reference Image-and Video-Quality Metrics},
-  author={Shumitskaya, Ekaterina and Antsiferova, Anastasia and Vatolin, Dmitriy},
-  journal={arXiv preprint arXiv:2403.05955},
-  year={2024}
+@InProceedings{pmlr-v235-shumitskaya24a,
+  title =    {{IOI}: Invisible One-Iteration Adversarial Attack on No-Reference Image- and Video-Quality Metrics},
+  author =       {Shumitskaya, Ekaterina and Antsiferova, Anastasia and Vatolin, Dmitriy S.},
+  booktitle =    {Proceedings of the 41st International Conference on Machine Learning},
+  pages =    {45329--45352},
+  year =    {2024},
+  editor =    {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume =    {235},
+  series =    {Proceedings of Machine Learning Research},
+  month =    {21--27 Jul},
+  publisher =    {PMLR},
+  pdf =    {https://raw.githubusercontent.com/mlresearch/v235/main/assets/shumitskaya24a/shumitskaya24a.pdf},
+  url =    {https://proceedings.mlr.press/v235/shumitskaya24a.html},
+  abstract =    {No-reference image- and video-quality metrics are widely used in video processing benchmarks. The robustness of learning-based metrics under video attacks has not been widely studied. In addition to having success, attacks on metrics that can be employed in video processing benchmarks must be fast and imperceptible. This paper introduces an Invisible One-Iteration (IOI) adversarial attack on no-reference image and video quality metrics. The proposed method uses two modules to ensure high visual quality and temporal stability of adversarial videos and runs for one iteration, which makes it fast. We compared our method alongside eight prior approaches using image and video datasets via objective and subjective tests. Our method exhibited superior visual quality across various attacked metric architectures while maintaining comparable attack success and speed. We made the code available on GitHub: https://github.com/katiashh/ioi-attack.}
 }
 ```
